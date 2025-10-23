@@ -1,5 +1,3 @@
-
-
 if not getgenv().coolbroker then
     getgenv().coolbroker = {}
 end
@@ -25,7 +23,6 @@ if getgenv().coolbroker then
         ["King Limone Seed"] = false
     }
 end
-
 --------------------------------------------------------------------------
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
@@ -126,7 +123,6 @@ function seedUtil.isInStock(seedName)
     return seedUtil.getSeedsFromStock()[seedName]
 end
 --------------------------------------------------------------------------
-
 function buyItem(name: string)
     local args = {
         name,
@@ -153,7 +149,7 @@ end
 local config = getgenv().coolbroker
 
 print("selected:")
-for key, seed in pairs(config.selectedSeeds) do
+for key, seed in config.selectedSeeds do
     if seed then
         print(key)
     end
@@ -164,6 +160,5 @@ while config.working do
         buySelectedSeeds(config.selectedSeeds)
         task.wait(.2)
     end
-
     task.wait(.2)
 end
