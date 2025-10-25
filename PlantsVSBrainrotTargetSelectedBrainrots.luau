@@ -1,3 +1,7 @@
+----------------------------make sure that weapon in your hand
+-----by coolbroker with love. Join discord server: https://discord.gg/Q3BCvcmZfM
+----------------------------
+
 if not getgenv().coolbroker then
     getgenv().coolbroker = {}
 end
@@ -235,4 +239,9 @@ while config.working do
 
         task.wait()
     end
+
 end
+
+----------------------------make sure that weapon in your hand
+-----by coolbroker with love. Join discord server: https://discord.gg/Q3BCvcmZfM
+----------------------------
