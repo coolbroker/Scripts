@@ -1,3 +1,7 @@
+----------------------------make sure ur backpack not full
+-----by coolbroker with love. Join discord server: https://discord.gg/Q3BCvcmZfM
+----------------------------
+
 if not getgenv().coolbroker then
     getgenv().coolbroker = {}
 end
@@ -162,3 +166,7 @@ while config.working do
     end
     task.wait(.2)
 end
+
+----------------------------make sure ur backpack not full
+-----by coolbroker with love. Join discord server: https://discord.gg/Q3BCvcmZfM
+----------------------------
