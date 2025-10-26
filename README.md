@@ -1,2 +1,2 @@
-# Scripts
-Hi, thats my scripts! Enjoy this
+# scripts
+coolbroker scripts. use it.
