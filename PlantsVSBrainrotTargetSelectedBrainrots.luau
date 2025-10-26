@@ -1,23 +1,15 @@
-----------------------------make sure that weapon in your hand
------by coolbroker with love. Join discord server: https://discord.gg/Q3BCvcmZfM
-----------------------------
-
 if not getgenv().coolbroker then
-    getgenv().coolbroker = {}
-end
-
-if getgenv().coolbroker then
     getgenv().coolbroker.working = true
     getgenv().coolbroker.targetSelectedBrainrots = true
     getgenv().coolbroker.selectedBrainrotsProperties = {
         ["rarity"] = {
             ["Rare"] = true,
-            ["Legendary"] = false,
-            ["Godly"] = false,
-            ["Limited"] = false,
-            ["Epic"] = false,
-            ["Mythic"] = false,
-            ["Secret"] = false
+            ["Legendary"] = true,
+            ["Godly"] = true,
+            ["Limited"] = true,
+            ["Epic"] = true,
+            ["Mythic"] = true,
+            ["Secret"] = true
         },
         ["mutations"] = {
             ["Neon"] = false,
@@ -32,6 +24,12 @@ if getgenv().coolbroker then
             ["Frozen"] = false
         }
     }
+end
+
+if getgenv().coolbroker then
+    getgenv().coolbroker.working = getgenv().coolbroker.config.working
+    getgenv().coolbroker.targetSelectedBrainrots = getgenv().coolbroker.config.targetSelectedBrainrots
+    getgenv().coolbroker.selectedBrainrotsProperties = getgenv().coolbroker.config.selectedBrainrotsProperties
 end
 -------------------------------
 Players = game:GetService("Players")
@@ -239,9 +237,4 @@ while config.working do
 
         task.wait()
     end
-
 end
-
-----------------------------make sure that weapon in your hand
------by coolbroker with love. Join discord server: https://discord.gg/Q3BCvcmZfM
-----------------------------
